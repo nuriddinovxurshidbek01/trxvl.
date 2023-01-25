@@ -1,0 +1,28 @@
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    align-items: $align;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin bcgIMG($url, $repeat, $position) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+@mixin psevdoEl($width, $height, $position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    content: "";
+}
+
+%list-unstyled {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}

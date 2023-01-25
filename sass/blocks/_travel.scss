@@ -1,0 +1,58 @@
+.travel {
+    max-width: 1366px;
+    margin: 90px auto 20px;
+    overflow-x: hidden;
+    &_title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+    }
+    &__list {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_etam {
+            width: 310px;
+            height: 200px;
+            margin-left: 80px;
+            background-image: url(../../images/img/hotels.png);
+            border-radius: 15px;
+            &_text {
+                padding: 123px 122px 24px 12px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 31px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .travel__plan {
+        background-image: url(../../images/img/bcg_iimg.png);
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-size: 1127px 395px;
+        margin: 0 auto;
+        width: 1127px;
+        height: 395px;
+        &_title {
+            margin: 80px 336px 24px 81px;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 64px;
+            color: #FFFFFF;
+            width: 678.8px;
+            padding-top: 80px;
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 41px;
+            color: #FFFFFF;
+            width: 817px;
+            margin: 0 226px 122px 81px;
+        }
+    }
+}
