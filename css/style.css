@@ -745,11 +745,11 @@ footer {
 }
 footer .footer__inner {
   background-image: url(../../images/img/footer_bcg.png);
-  background-size: 1366px 543px;
+  background-size: 1366px 545px;
   background-repeat: no-repeat;
   padding: 60px 120px 0 139px;
   margin: 0 auto;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -834,27 +834,31 @@ footer .footer {
   padding: 42px 0;
   background-color: #141414;
 }
-footer .footer .footer_list {
+footer .footer_list {
   display: flex;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0 120px;
 }
-footer .footer .footer__etam_list {
+footer .footer_list_etam {
+  max-width: 180px;
+}
+footer .footer_list .footer__etam_list {
   list-style-type: none;
 }
-footer .footer .footer__etam_list .link {
-  margin-top: 40px;
+footer .footer_list .footer__etam_list .link {
+  margin: 40px 20px;
+  width: 100%;
 }
-footer .footer .footer__etam_list_etam {
+footer .footer_list .footer__etam_list_etam {
   padding-top: 15px;
   display: flex;
-  width: 120px;
   justify-content: space-between;
 }
-footer .footer .footer__etam_list_etam-link {
+footer .footer_list .footer__etam_list_etam-link {
   text-decoration: none;
   font-weight: 400;
   font-size: 13px;

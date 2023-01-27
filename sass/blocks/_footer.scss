@@ -1,118 +1,123 @@
-footer {
-    width: 100%;
-    .footer__inner {
-        background-image: url(../../images/img/footer_bcg.png);
-        background-size: 1366px 543px;
-        background-repeat: no-repeat;
-        padding: 60px 120px 0 139px;
-        margin: 0 auto;
-        border-radius: 25px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .footer__text {
-            max-width: 771px;
-            &_title {
-                font-weight: 700;
-                font-size: 48px;
-                line-height: 55px;
-                color: #FFFFFF;
-            }
-            &_text {
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            .fotter__info {
+        footer {
+            width: 100%;
+            .footer__inner {
+                background-image: url(../../images/img/footer_bcg.png);
+                background-size: 1366px 545px;
+                background-repeat: no-repeat;
+                padding: 60px 120px 0 139px;
+                margin: 0 auto;
+                border-radius: 25px 25px 0 0;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: space-between;
-            }
-            .footer__btn_one {
-                width: 91px;
-                height: 39px;
-                background-color: #a8a3a3;
-                padding: 8px 16px;
-                border-radius: 15px;
-                border: none;
-                color: white;
-            }
-            .footer__btn_tuo {
-                width: 91px;
-                height: 39px;
-                color: white;
-                backdrop-filter: blur(1px);
-                background-color: #e0cdcd00;
-                border: none;
-            }
-            .footer_min_text {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 16px;
-                color: #FFFFFF;
-            }
-            .fotter__search {
-                padding: 8px 16px 8px 14px;
-                max-width: 462px;
-                height: 52px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: rgba(255, 255, 255, 0.4);
-                border-radius: 25px;
-                label {
-                    color: #FFFFFF;
-                    opacity: 0.7;
+                .footer__text {
+                    max-width: 771px;
+                    &_title {
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 55px;
+                        color: #FFFFFF;
+                    }
+                    &_text {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                    }
+                    .fotter__info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .footer__btn_one {
+                        width: 91px;
+                        height: 39px;
+                        background-color: #a8a3a3;
+                        padding: 8px 16px;
+                        border-radius: 15px;
+                        border: none;
+                        color: white;
+                    }
+                    .footer__btn_tuo {
+                        width: 91px;
+                        height: 39px;
+                        color: white;
+                        backdrop-filter: blur(1px);
+                        background-color: #e0cdcd00;
+                        border: none;
+                    }
+                    .footer_min_text {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                    .fotter__search {
+                        padding: 8px 16px 8px 14px;
+                        max-width: 462px;
+                        height: 52px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgba(255, 255, 255, 0.4);
+                        border-radius: 25px;
+                        label {
+                            color: #FFFFFF;
+                            opacity: 0.7;
+                        }
+                        input {
+                            border: none;
+                            background-color: rgba(255, 255, 255, 0.103);
+                            color: #FFFFFF;
+                            opacity: 0.7;
+                        }
+                        &_link {
+                            width: 188px;
+                            height: 42px;
+                            background: #FFFFFF;
+                            border-radius: 32px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #2659C3;
+                            opacity: 0.7;
+                            padding: 12px 64px;
+                            text-decoration: none;
+                        }
+                    }
                 }
-                input {
-                    border: none;
-                    background-color: rgba(255, 255, 255, 0.103);
-                    color: #FFFFFF;
-                    opacity: 0.7;
-                }
-                &_link {
-                    width: 188px;
-                    height: 42px;
-                    background: #FFFFFF;
-                    border-radius: 32px;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 18px;
-                    color: #2659C3;
-                    opacity: 0.7;
-                    padding: 12px 64px;
-                    text-decoration: none;
+            }
+            .footer {
+                padding: 42px 0;
+                background-color: #141414;
+                &_list {
+                    display: flex;
+                    @include flex(row, flex-start, space-between);
+                    list-style-type: none;
+                    padding: 0 120px;
+                    &_etam {
+                        max-width: 180px;
+                    }
+                    .footer__etam_list {
+                        list-style-type: none;
+                        .link {
+                            margin: 40px 20px;
+                            width: 100%;
+                        }
+                        &_etam {
+                            padding-top: 15px;
+                            display: flex;
+                            // width: 120px;
+                            justify-content: space-between;
+                            &-link {
+                                text-decoration: none;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 17px;
+                                color: #808080;
+                            }
+                        }
+                    }
                 }
             }
         }
-    }
-    .footer {
-        padding: 42px 0;
-        background-color: #141414;
-        .footer_list {
-            display: flex;
-            @include flex(row, flex-start, space-between);
-            list-style-type: none;
-        }
-        .footer__etam_list {
-            list-style-type: none;
-            .link {
-                margin-top: 40px;
-            }
-            &_etam {
-                padding-top: 15px;
-                display: flex;
-                width: 120px;
-                justify-content: space-between;
-                &-link {
-                    text-decoration: none;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 17px;
-                    color: #808080;
-                }
-            }
-        }
-    }
-}
